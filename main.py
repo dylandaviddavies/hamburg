@@ -4,7 +4,7 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 class Summarize(BaseModel):
     text: str
